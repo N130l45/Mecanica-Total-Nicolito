@@ -79,6 +79,8 @@ header {
     font-family: 'LatoLight';
     margin-top: 0%;
     padding-top: 0%;
+    padding: 0
+    ;
 }
 
 .container-empresa button {
@@ -118,4 +120,101 @@ header {
     font-family: 'LatoThin';
     font-size: 3.2em;
     text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.seccion-info {
+    background-color: #0c4ea2;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-info h2 {
+    margin: 0px;
+    padding: 0;
+    color: #0c4ea2;
+    font-family: 'LatoThin';
+    font-size: 3.2em;
+    text-transform: uppercase;
+    background-color:#F5B033 ;
+}
+
+
+
+.container-info{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.container-img-info {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-img-info img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.container-img-info p {
+    color: white;
+    font-size: 1.6em;
+    width: 90%;
+    text-align: center;
+    font-family: 'LatoLight';
+}
+
+@media (max-width:1200px) and (min-width:800px) {
+    .container-info {
+        width: 100%;
+    }
+    .container-img-info img {
+        width: 40%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .seccion-info h2 {
+        font-size: 2.4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .seccion-info h4 {
+        font-size: 1.2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-info {
+        flex-direction: column;
+    }
+
+    .container-img-info {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .container-img-info img {
+        width: 35%;
+    }
+    .container-img-info p{
+        font-size: 1.2em;
+        width: 40%;
+    }
 }
